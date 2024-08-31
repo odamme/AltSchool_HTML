@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oluwadamilola Oladeji - Application</title>
+    <link rel="stylesheet" href="./assets/styles/form.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="form.html">FORM</a>
+            <a href="table.html">TABLE</a>
+            <a href="media.html">MEDIA</a>
+        </nav>
+    </header>
+    <div class="heading">
+        <img src="./assets/media/form_img.png" width="100" alt="Alt School icon">
+        <p>
+            Already an AltSchooler?<a href="form.html">Sign In</a>
+        </p>
+    </div>
+    
+    <section>
+        <h2 class="heading">Signup</h2>
+        <p class="paragraph">Take the next steps to apply at Altschool Africa</p>
+    </section>
+    
+    <div class="container">
+        <form class="form"> 
+        <div class="form-group">
+            <label for="Firstname">First Name</label>
+            <input type="text" id="Fname" placeholder="Enter first name" required>
+        </div>
+        <div class="form-group">
+            <label for="Lastname">Last Name</label>
+            <input type="text" id="Lname" placeholder="Enter last name" required>
+        </div>
+        <div class="form-group">
+            <label for="Gender">Gender</label>
+            <select id="Gender" required>
+                <option value="" disabled selected hidden>Select gender</option>
+                <option value="M"> Male</option>
+                <option value="F"> Female</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter email address" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="08012345678" required>
+        </div>
+        <div class="form-group">
+            <label for="Country">Country</label>
+            <select id="Country" required>
+                <option value="" disabled selected hidden>Select country</option>
+                <option value="Nig"> Nigeria</option>
+                <option value="US"> United States</option>
+                <option value="UK"> United Kingdom</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="state">State/City of Residence</label>
+            <input type="text" id="state" placeholder="Enter your state of residence" required>
+        </div>
+        <div class="form-group">
+            <label for="info">How did you hear about us?</label>
+            <select id="info">
+                <option value="" disabled selected hidden>Select channel</option>
+                <option value="X"> Twitter</option>
+                <option value="IG"> Instagram</option>
+                <option value="Facebook"> Facebook</option>
+                <option value="LinkedIn"> LinkedIn</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" required>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="Confirm password" required>
+        </div>
+        <p>
+            By clicking continue, I agree to the 
+            <a href="terms_of_use.html" target="_blank">Terms of Use</a> 
+            and acknowledge that I have read the 
+            <a href="privacy_policy.html" target="_blank">Privacy Policy</a>.
+        </p>
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+    
+</body>
+</html>

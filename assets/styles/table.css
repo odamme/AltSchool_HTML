@@ -1,0 +1,134 @@
+body, h1, table, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f1f3;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+li {
+  
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #0082fc;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #f48fb1;
+}
+header {
+    background-color: #0082fc;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 15px;
+    transition: 0.5s ease-in;
+    transform: scale(2);
+}
+
+nav a:hover {
+    color: #ffffff;
+    
+}
+
+/*body{
+    padding: 20px;
+}*/
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+}
+
+h1{
+    text-align: center;
+    color: #e91e63;
+    padding: 10px 0;
+    margin: 0;
+}
+
+/*table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}*/
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td{
+    border: 1px solid #e0e0e0;
+    padding: 8px;
+    text-align: left;
+}
+
+table th{
+    background-color: #ccc;
+    color: #000;
+}
+
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        padding-left: 50%;
+        white-space: wrap;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding-left: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+}
